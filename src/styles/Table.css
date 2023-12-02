@@ -1,0 +1,152 @@
+/* styles.css */
+
+.table-responsive {
+    overflow-x: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .search-box input {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pagination button {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 4px;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .pagination span {
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  
+  .pagination button:disabled {
+    background-color: #ccc;
+    color: #666;
+    border-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .search-box {
+    margin-bottom: 15px;
+  }
+  
+  .search-box input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+  }
+  .editIcon,.deleteIcon{
+    cursor: pointer;
+    margin: 4px;
+  }
+  button{
+    color: white;
+    background: black;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius:5px;
+    cursor: pointer;
+  }
+  .save{
+    background: green;
+  }
+  .cancel{
+    background: red;
+  }
+.selectedDel{
+    display: flex;
+    margin-left: 10px;
+}  
+.selectedDel button{
+    margin-left: 20px;
+}
+.deleteAll{
+    margin-left: 80%;
+    cursor: pointer;
+}
+.table tr.selected {
+    background-color: #f2f2f2;
+  }
+@media only screen and (max-width: 768px) {
+    .table th, .table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .search-box input {
+      padding: 5px;
+    }
+  
+    .deleteAll {
+      font-size: 14px;
+      margin-left: 0;
+    }
+  
+    .editIcon, .deleteIcon {
+      font-size: 18px;
+    }
+  
+    .save, .cancel {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  
+    .pagination button {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  
+    .selectedDel h4 {
+      font-size: 14px;
+    }
+  
+    .selectedDel button {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+  }
