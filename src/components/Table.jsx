@@ -1,6 +1,6 @@
 // Table.js
 import React, { useState } from 'react';
-import '../styles/Table.css'; // Import your CSS file
+import '../styles/Table.css'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash,faEdit } from '@fortawesome/free-solid-svg-icons';
 
@@ -73,19 +73,16 @@ const Table = ({ data,onDelete ,onSave,deleteAll}) => {
 
 
   const handleSave = (id) => {
-    // Implement the logic to save the edited row locally
+  
     console.log(editedData)
     onSave(editedData,id);
-    setEditingRowId(null); // Clear editingRowId
+    setEditingRowId(null); 
   };
 
   const deleteSelectedRows = () => {
-    // Implement the logic to delete selected rows locally
-    // const updatedData = data.filter((row) => !selectedRows.includes(row.id));
     onDelete(selectedRows)
-    // You can use the updatedData as needed, e.g., update state or trigger further actions
     console.log('Deleted rows:', selectedRows);
-    setSelectedRows([]); // Clear selected rows after deletion
+    setSelectedRows([]); 
   };
   
   return (

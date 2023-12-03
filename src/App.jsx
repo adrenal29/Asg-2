@@ -16,9 +16,7 @@ function App() {
   },[])
 
   const handleDelete = (id) => {
-    // Implement the logic to delete a specific row locally
     const updatedData = data.filter((row) => !id.includes(row.id));
-    // Update the state with the filtered data
     setData(updatedData);
   };
   const handleUpdate=(editedData,id)=>{
